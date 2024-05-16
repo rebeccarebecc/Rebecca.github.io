@@ -13,333 +13,382 @@
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="css/styles.css" rel="stylesheet" />
     </head>
+    <style>
+        
+        .newsection {
+            width:100%;
+            margin:0;
+            max-width:none;
+            background-image: url('0518.png');
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+        }
+
+        .section-education {
+            background-color: #f8f9fa;
+        }
+        .section-internship {
+            background-color: #e9ecef;
+        }
+        .section-activities {
+            background-color: #dee2e6;
+        }
+        .section-community {
+            background-color: #ced4da;
+        }
+
+        .section-more {
+            background-color: #b80505d0;
+        }
+
+    .indent {
+        margin-left: 2em; 
+    }
+
+    .internship-title {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+        }
+
+
+    .section-internship .feature-image {
+    max-width: 100%;
+    height: auto;
+    position: relative;
+    top: 30%;
+    transform: translateY(-50%);
+    right: -10%;
+    }
+
+    </style>
     <body>
         <!-- Responsive navbar-->
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark"> 
             <div class="container px-5">
                 <a class="navbar-brand" href="#!">Start Bootstrap</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                         <li class="nav-item"><a class="nav-link active" aria-current="page" href="#!">Home</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#!">About</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#!">Contact</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#!">Services</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#features">About</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#more">More</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
                     </ul>
                 </div>
             </div>
         </nav>
         <!-- Header-->
-        <header class="bg-dark py-5">
+
+        <header class="newsection">
             <div class="container px-5">
                 <div class="row gx-5 justify-content-center">
                     <div class="col-lg-6">
                         <div class="text-center my-5">
-                            <h1 class="display-5 fw-bolder text-white mb-2">Present your business in a whole new way</h1>
-                            <p class="lead text-white-50 mb-4">Quickly design and customize responsive mobile-first sites with Bootstrap, the world’s most popular front-end open source toolkit!</p>
+                            <h1 class="display-5 fw-bolder text-white mb-2">Rebecca Wang</h1>
+                            <p class="lead text-white-50 mb-4">I am a senior high school student set to join Boston University in the fall. With a strong interest in economics, business, and math, I have actively participated in various related activities and competitions. My academic journey has honed my analytical and leadership skills, preparing me for future challenges.
+                            </p>
                             <div class="d-grid gap-3 d-sm-flex justify-content-sm-center">
-                                <a class="btn btn-primary btn-lg px-4 me-sm-3" href="#features">Get Started</a>
-                                <a class="btn btn-outline-light btn-lg px-4" href="#!">Learn More</a>
+                                <a class="btn btn-dark btn-lg px-4 me-sm-3" href="#features">Get Started</a>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </header>
+
         <!-- Features section-->
-        <section class="py-5 border-bottom" id="features">
-            <div class="container px-5 my-5">
-                <div class="row gx-5">
-                    <div class="col-lg-4 mb-5 mb-lg-0">
-                        <div class="feature bg-primary bg-gradient text-white rounded-3 mb-3"><i class="bi bi-collection"></i></div>
-                        <h2 class="h4 fw-bolder">Featured title</h2>
-                        <p>Paragraph of text beneath the heading to explain the heading. We'll add onto it with another sentence and probably just keep going until we run out of words.</p>
-                        <a class="text-decoration-none" href="#!">
-                            Call to action
-                            <i class="bi bi-arrow-right"></i>
-                        </a>
+ <!-- Features section-->
+ <section class="py-5 border-bottom section-education" id="features">
+    <div class="container px-5 my-5">
+        <div class="row">
+            <!-- Image Column -->
+            <div class="col-md-4">
+                <img src="portrait1.jpg" width = "250" height= "350" alt="Education Image" class="img-fluid mb-3 feature-image">
+            </div>
+            <!-- Text Column -->
+            <div class="col-md-8">
+                <div class="d-flex flex-column align-items-start text-start mb-4">
+                    <div class="feature bg-danger bg-gradient text-white rounded-3 mb-3"><i class="bi bi-collection"></i></div>
+                    <h2 class="h4 fw-bolder">EDUCATION</h2>
+                    <div class="internship-title">
+                    <p>Kang Chiao International School (KCIS) – Taipei Campus, Taiwan</p>
+                    <p>Sep. 2018 - June 2024</p>
                     </div>
-                    <div class="col-lg-4 mb-5 mb-lg-0">
-                        <div class="feature bg-primary bg-gradient text-white rounded-3 mb-3"><i class="bi bi-building"></i></div>
-                        <h2 class="h4 fw-bolder">Featured title</h2>
-                        <p>Paragraph of text beneath the heading to explain the heading. We'll add onto it with another sentence and probably just keep going until we run out of words.</p>
-                        <a class="text-decoration-none" href="#!">
-                            Call to action
-                            <i class="bi bi-arrow-right"></i>
-                        </a>
+                    <p>Coursework: AP Microeconomics, AP Macroeconomics, AP Computer Science A, AP Calculus AB, Honors Chinese, Advanced English Literature, Honor Precalculus</p>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Internship section -->
+<section class="py-5 border-bottom section-internship">
+    <div class="container px-5 my-5">
+        <div class="row">
+            <!-- Text Column -->
+            <div class="col-md-8">
+                <div class="d-flex flex-column align-items-start text-start mb-5">
+                    <div class="feature bg-danger bg-gradient text-white rounded-3 mb-3"><i class="bi bi-building"></i></div>
+                    <h2 class="h4 fw-bolder">INTERNSHIP EXPERIENCE</h2>
+                    <div class="internship-title">
+                        <li class="mb-2">Molii Travel Agent</li>
+                        <p class="mb-2">July 2023</p>
                     </div>
-                    <div class="col-lg-4">
-                        <div class="feature bg-primary bg-gradient text-white rounded-3 mb-3"><i class="bi bi-toggles2"></i></div>
-                        <h2 class="h4 fw-bolder">Featured title</h2>
-                        <p>Paragraph of text beneath the heading to explain the heading. We'll add onto it with another sentence and probably just keep going until we run out of words.</p>
-                        <a class="text-decoration-none" href="#!">
-                            Call to action
-                            <i class="bi bi-arrow-right"></i>
-                        </a>
+                    <li class="indent mb-2">Use proficient business language to translate business documents, websites, and ads from Mandarin into English to engage foreign visitors. Gaining insights into company operations.</li>
+                </div>
+            </div>
+            <!-- Image Column -->
+            <div class="col-md-4 d-flex align-items-center justify-content-center">
+                <img src="logo8-15-11-3.png" alt="Internship Image" class="img-fluid feature-image">
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Activities section -->
+<section class="py-5 border-bottom section-activities">
+    <div class="container px-5 my-5">
+        <div class="row">
+            <!-- Image Column -->
+            <div class="col-md-4 d-flex flex-wrap">
+                <img src="X-Culture_logo-web-transparent-Custom.png" alt="Activities Image 1" class="img-fluid feature-image">
+                <img src="MEC.png" alt="Activities Image 2" class="img-fluid feature-image">
+                <img src="WSI-Event-featured-image.jpg" alt="Activities Image 3" class="img-fluid feature-image">
+                <img src="1444730330-1369749630.jpg" alt="Activities Image 4" class="img-fluid feature-image">
+            </div>
+            <!-- Text Column -->
+            <div class="col-md-8">
+                <div class="d-flex flex-column align-items-start text-start mb-5">
+                    <div class="feature bg-danger bg-gradient text-white rounded-3 mb-3"><i class="bi bi-toggles2"></i></div>
+                    <h2 class="h4 fw-bolder">ACTIVITIES</h2>
+                    <p>
+                        <div class="internship-title">
+                        <li class="mb-2">X-Culture</li>
+                        <p class="mb-2">Jan. 2023 - Dec 2023</p>
+                        </div>
+                        <li class="indent mb-2">Cooperated with an international team and promoted a business proposal to solve entry challenges for a real company, Bergplaas, in South Africa.</li>
+                        <li class="indent mb-2">Coached global virtual teams to develop market strategies for two real companies, MyBetterBatch and Wheelstair.</li>
+                    </p>
+                    <p>
+                        <div class="internship-title">
+                        <li class="mb-2">MEC(Model Entrepreneur Competition)</li>
+                        <p class="mb-2">Mar. - July 2023</p>
+                        </div>
+                        <li class="indent mb-2">Innovated an idea of an educational AI investing application(Investify) with a team and entered the finals(about 1000 participants)</li>
+                    </p>
+                    <p>
+                        <div class="internship-title">
+                        <li class="mb-2">VFA Club(Venture for All)</li>
+                        <p class="mb-2">Oct.2022 - Present</p>
+                        </div>
+                        <li class="indent mb-2">Build expertise in market and product analysis, financial plans, risk assessment, and SDGs; guide other students in entrepreneurship competitions and proposals.</li>
+                    </p>
+                    <p>
+                        <div class="internship-title">
+                        <li class="mb-2">NFTE(Network for Teaching Entrepreneurship)</li>
+                        <p class="mb-2">Oct. - Dec. 2022</p>
+                        </div>
+                        <li class="indent mb-2">Addressed education inequality; brainstormed an idea for an online game, Econ-Crush, promoting financial knowledge among people aged 14 to 40.</li>
+                    </p>
+                    <p>
+                        <div class="internship-title">
+                        <li class="mb-2">KCMUN</li>
+                        <p class="mb-2">Sep. 2021- Nov. 2021</p>
+                        </div>
+                        <li class="indent mb-2">Represented New Zealand to debate and cooperated with other delegates to solve Antarctic resources issues.</li>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+ <!-- Community Service section -->
+ <section class="py-5 border-bottom section-community">
+    <div class="container px-5 my-5">
+        <div class="row">
+            <!-- Text Column -->
+            <div class="col-md-8">
+                <div class="d-flex flex-column align-items-start text-start mb-5">
+                    <div class="feature bg-danger bg-gradient text-white rounded-3 mb-3"><i class="bi bi-toggles2"></i></div>
+                    <h2 class="h4 fw-bolder">COMMUNITY SERVICE</h2>
+                    <p>
+                        <div class="internship-title">
+                        <li class="mb-2">Kang Chiao Learning Center</li>
+                        <p class="mb-2">Oct. 2022 – Present</p>
+                        </div>
+                        <li class="indent mb-2">Teach the other younger students difficult subjects, such as math and science.</li>
+                    </p>
+                    <p>
+                        <div class="internship-title">
+                        <li class="mb-2">Funding Raising</li>
+                        <p class="mb-2">Sep. 2018 - Present</p>                          
+                        </div>
+                        <li class="indent mb-2">Raise funding on the street. The organizations that I served include The Children Charity Association/ Taiwan Fund for Children and Families(2020), Genesis Social Welfare Foundation/ Taiwan U-Life Association(2021), Yu-Cheng Social Welfare Foundation / Down Syndrome Foundation R.O.C(2022), etc.</li>
+                    </p>
+                    <p>
+                        <div class="internship-title">
+                        <li class="mb-2">Taiwan International Ocean Youth Volunteer Training Camp 2023</li>
+                        <p class="mb-2">Mar. 2023                        </p> 
+                        </div>
+                        <li class="indent mb-2">Strengthened the participation of marine science sustainable development in sustainable development goals.</li>
+                    </p>
+                </div>
+            </div>
+            <!-- Image Column -->
+            <div class="col-md-4 d-flex flex-wrap">
+                <img src="1-81.jpg" alt="Community Service Image 1" class="img-fluid feature-image">
+                <img src="81j650c8m8i8n1w4u9h4.jpg" alt="Community Service Image 2" class="img-fluid feature-image">
+            </div>
+        </div>
+    </div>
+</section>
+
+
+</body>
+</html>
+
+
+
+<!-- Pricing section-->
+<section class="py-5 border-bottom section-more" id="more">
+
+    <div class="container px-5 my-5">
+        <div class="text-center mb-5">
+            <h2 class="fw-bolder text-white">More About Me</h2>
+        </div>
+        <div class="row gx-5 justify-content-center">
+            <!-- Pricing card HONORS -->
+            <div class="col-lg-4 col-xl-4">
+                <div class="card mb-5 mb-xl-0 pricing-card equal-height">
+                    <div class="card-body p-5">
+                        <div class="mb-3">
+                            <span class="display-4 fw-bold" style="font-size: 1.5rem;">HONORS</span>
+                        </div>
+                        <ul class="list-unstyled mb-4">
+                            <li class="mb-2">
+                                <i class="bi bi-check text-primary"></i>
+                                Academic Honors Award*14
+                            </li>
+                            <li class="mb-2">
+                                <i class="bi bi-check text-primary"></i>
+                                Kang Chiao Faculty and Students Art Exhibition Award*4
+                            </li>
+                            <li class="mb-2">
+                                <i class="bi bi-check text-primary"></i>
+                                Academic Elite Award*2 
+                            </li>
+                            <li class="mb-2">
+                                <i class="bi bi-check text-primary"></i>
+                                Inter-class Aquathlon Competition*3
+                            </li>
+                        </ul>
+                        <img src="IMG_8923 2.JPG" width="275" height="320">
                     </div>
                 </div>
             </div>
-        </section>
-        <!-- Pricing section-->
-        <section class="bg-light py-5 border-bottom">
-            <div class="container px-5 my-5">
-                <div class="text-center mb-5">
-                    <h2 class="fw-bolder">Pay as you grow</h2>
-                    <p class="lead mb-0">With our no hassle pricing plans</p>
-                </div>
-                <div class="row gx-5 justify-content-center">
-                    <!-- Pricing card free-->
-                    <div class="col-lg-6 col-xl-4">
-                        <div class="card mb-5 mb-xl-0">
-                            <div class="card-body p-5">
-                                <div class="small text-uppercase fw-bold text-muted">Free</div>
-                                <div class="mb-3">
-                                    <span class="display-4 fw-bold">$0</span>
-                                    <span class="text-muted">/ mo.</span>
-                                </div>
-                                <ul class="list-unstyled mb-4">
-                                    <li class="mb-2">
-                                        <i class="bi bi-check text-primary"></i>
-                                        <strong>1 users</strong>
-                                    </li>
-                                    <li class="mb-2">
-                                        <i class="bi bi-check text-primary"></i>
-                                        5GB storage
-                                    </li>
-                                    <li class="mb-2">
-                                        <i class="bi bi-check text-primary"></i>
-                                        Unlimited public projects
-                                    </li>
-                                    <li class="mb-2">
-                                        <i class="bi bi-check text-primary"></i>
-                                        Community access
-                                    </li>
-                                    <li class="mb-2 text-muted">
-                                        <i class="bi bi-x"></i>
-                                        Unlimited private projects
-                                    </li>
-                                    <li class="mb-2 text-muted">
-                                        <i class="bi bi-x"></i>
-                                        Dedicated support
-                                    </li>
-                                    <li class="mb-2 text-muted">
-                                        <i class="bi bi-x"></i>
-                                        Free linked domain
-                                    </li>
-                                    <li class="text-muted">
-                                        <i class="bi bi-x"></i>
-                                        Monthly status reports
-                                    </li>
-                                </ul>
-                                <div class="d-grid"><a class="btn btn-outline-primary" href="#!">Choose plan</a></div>
-                            </div>
+            <!-- Pricing card Skills -->
+            <div class="col-lg-4 col-xl-4">
+                <div class="card mb-5 mb-xl-0 pricing-card equal-height">
+                    <div class="card-body p-5">
+                        <div class="mb-3">
+                            <span class="display-4 fw-bold" style="font-size: 1.5rem;">SKILLS</span>
                         </div>
-                    </div>
-                    <!-- Pricing card pro-->
-                    <div class="col-lg-6 col-xl-4">
-                        <div class="card mb-5 mb-xl-0">
-                            <div class="card-body p-5">
-                                <div class="small text-uppercase fw-bold">
-                                    <i class="bi bi-star-fill text-warning"></i>
-                                    Pro
-                                </div>
-                                <div class="mb-3">
-                                    <span class="display-4 fw-bold">$9</span>
-                                    <span class="text-muted">/ mo.</span>
-                                </div>
-                                <ul class="list-unstyled mb-4">
-                                    <li class="mb-2">
-                                        <i class="bi bi-check text-primary"></i>
-                                        <strong>5 users</strong>
-                                    </li>
-                                    <li class="mb-2">
-                                        <i class="bi bi-check text-primary"></i>
-                                        5GB storage
-                                    </li>
-                                    <li class="mb-2">
-                                        <i class="bi bi-check text-primary"></i>
-                                        Unlimited public projects
-                                    </li>
-                                    <li class="mb-2">
-                                        <i class="bi bi-check text-primary"></i>
-                                        Community access
-                                    </li>
-                                    <li class="mb-2">
-                                        <i class="bi bi-check text-primary"></i>
-                                        Unlimited private projects
-                                    </li>
-                                    <li class="mb-2">
-                                        <i class="bi bi-check text-primary"></i>
-                                        Dedicated support
-                                    </li>
-                                    <li class="mb-2">
-                                        <i class="bi bi-check text-primary"></i>
-                                        Free linked domain
-                                    </li>
-                                    <li class="text-muted">
-                                        <i class="bi bi-x"></i>
-                                        Monthly status reports
-                                    </li>
-                                </ul>
-                                <div class="d-grid"><a class="btn btn-primary" href="#!">Choose plan</a></div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Pricing card enterprise-->
-                    <div class="col-lg-6 col-xl-4">
-                        <div class="card">
-                            <div class="card-body p-5">
-                                <div class="small text-uppercase fw-bold text-muted">Enterprise</div>
-                                <div class="mb-3">
-                                    <span class="display-4 fw-bold">$49</span>
-                                    <span class="text-muted">/ mo.</span>
-                                </div>
-                                <ul class="list-unstyled mb-4">
-                                    <li class="mb-2">
-                                        <i class="bi bi-check text-primary"></i>
-                                        <strong>Unlimited users</strong>
-                                    </li>
-                                    <li class="mb-2">
-                                        <i class="bi bi-check text-primary"></i>
-                                        5GB storage
-                                    </li>
-                                    <li class="mb-2">
-                                        <i class="bi bi-check text-primary"></i>
-                                        Unlimited public projects
-                                    </li>
-                                    <li class="mb-2">
-                                        <i class="bi bi-check text-primary"></i>
-                                        Community access
-                                    </li>
-                                    <li class="mb-2">
-                                        <i class="bi bi-check text-primary"></i>
-                                        Unlimited private projects
-                                    </li>
-                                    <li class="mb-2">
-                                        <i class="bi bi-check text-primary"></i>
-                                        Dedicated support
-                                    </li>
-                                    <li class="mb-2">
-                                        <i class="bi bi-check text-primary"></i>
-                                        <strong>Unlimited</strong>
-                                        linked domains
-                                    </li>
-                                    <li class="text-muted">
-                                        <i class="bi bi-check text-primary"></i>
-                                        Monthly status reports
-                                    </li>
-                                </ul>
-                                <div class="d-grid"><a class="btn btn-outline-primary" href="#!">Choose plan</a></div>
-                            </div>
-                        </div>
+                        <ul class="list-unstyled mb-4">
+                            <li class="mb-2">
+                                <i class="bi bi-check text-primary"></i>
+                                Communication
+                            </li>
+                            <li class="mb-2">
+                                <i class="bi bi-check text-primary"></i>
+                                Leadership
+                            </li>
+                            <li class="mb-2">
+                                <i class="bi bi-check text-primary"></i>
+                                Editing
+                            </li>
+                            <li class="mb-2">
+                                <i class="bi bi-check text-primary"></i>
+                                Product Marketing
+                            </li>
+                            <li class="mb-2">
+                                <i class="bi bi-check text-primary"></i>
+                                Analytical Thinking
+                            </li>
+                        </ul>
+                        <img src="3B7969A1-08C1-42BD-BDFC-A96B839913A7.JPG" width="275" height="320">
                     </div>
                 </div>
             </div>
-        </section>
-        <!-- Testimonials section-->
-        <section class="py-5 border-bottom">
-            <div class="container px-5 my-5 px-5">
-                <div class="text-center mb-5">
-                    <h2 class="fw-bolder">Customer testimonials</h2>
-                    <p class="lead mb-0">Our customers love working with us</p>
-                </div>
-                <div class="row gx-5 justify-content-center">
-                    <div class="col-lg-6">
-                        <!-- Testimonial 1-->
-                        <div class="card mb-4">
-                            <div class="card-body p-4">
-                                <div class="d-flex">
-                                    <div class="flex-shrink-0"><i class="bi bi-chat-right-quote-fill text-primary fs-1"></i></div>
-                                    <div class="ms-4">
-                                        <p class="mb-1">Thank you for putting together such a great product. We loved working with you and the whole team, and we will be recommending you to others!</p>
-                                        <div class="small text-muted">- Client Name, Location</div>
-                                    </div>
-                                </div>
-                            </div>
+            <!-- Pricing card Languages -->
+            <div class="col-lg-4 col-xl-4">
+                <div class="card pricing-card equal-height">
+                    <div class="card-body p-5">
+                        <div class="mb-3">
+                            <span class="display-4 fw-bold" style="font-size: 1.5rem;">LANGUAGES</span>
                         </div>
-                        <!-- Testimonial 2-->
-                        <div class="card">
-                            <div class="card-body p-4">
-                                <div class="d-flex">
-                                    <div class="flex-shrink-0"><i class="bi bi-chat-right-quote-fill text-primary fs-1"></i></div>
-                                    <div class="ms-4">
-                                        <p class="mb-1">The whole team was a huge help with putting things together for our company and brand. We will be hiring them again in the near future for additional work!</p>
-                                        <div class="small text-muted">- Client Name, Location</div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                        <ul class="list-unstyled mb-4">
+                            <li class="mb-2">
+                                <i class="bi bi-check text-primary"></i>
+                                Mandarin
+                            </li>
+                            <li class="mb-2">
+                                <i class="bi bi-check text-primary"></i>
+                                English
+                            </li>
+                            <li class="mb-2">
+                                <i class="bi bi-check text-primary"></i>
+                                Spanish
+                            </li>
+                        </ul>
+                        <img src="IMG_865C2D8B2DAE-1.jpeg" width="275" height="320">
                     </div>
                 </div>
             </div>
-        </section>
+        </div>
+    </div>
+</section>
+
+<style>
+.equal-height {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+.equal-height .card-body {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+.equal-height .list-unstyled {
+    flex-grow: 1;
+}
+</style>
+
+
+
+
         <!-- Contact section-->
-        <section class="bg-light py-5">
-            <div class="container px-5 my-5 px-5">
-                <div class="text-center mb-5">
-                    <div class="feature bg-primary bg-gradient text-white rounded-3 mb-3"><i class="bi bi-envelope"></i></div>
-                    <h2 class="fw-bolder">Get in touch</h2>
-                    <p class="lead mb-0">We'd love to hear from you</p>
-                </div>
-                <div class="row gx-5 justify-content-center">
-                    <div class="col-lg-6">
-                        <!-- * * * * * * * * * * * * * * *-->
-                        <!-- * * SB Forms Contact Form * *-->
-                        <!-- * * * * * * * * * * * * * * *-->
-                        <!-- This form is pre-integrated with SB Forms.-->
-                        <!-- To make this form functional, sign up at-->
-                        <!-- https://startbootstrap.com/solution/contact-forms-->
-                        <!-- to get an API token!-->
-                        <form id="contactForm" data-sb-form-api-token="API_TOKEN">
-                            <!-- Name input-->
-                            <div class="form-floating mb-3">
-                                <input class="form-control" id="name" type="text" placeholder="Enter your name..." data-sb-validations="required" />
-                                <label for="name">Full name</label>
-                                <div class="invalid-feedback" data-sb-feedback="name:required">A name is required.</div>
-                            </div>
-                            <!-- Email address input-->
-                            <div class="form-floating mb-3">
-                                <input class="form-control" id="email" type="email" placeholder="name@example.com" data-sb-validations="required,email" />
-                                <label for="email">Email address</label>
-                                <div class="invalid-feedback" data-sb-feedback="email:required">An email is required.</div>
-                                <div class="invalid-feedback" data-sb-feedback="email:email">Email is not valid.</div>
-                            </div>
-                            <!-- Phone number input-->
-                            <div class="form-floating mb-3">
-                                <input class="form-control" id="phone" type="tel" placeholder="(123) 456-7890" data-sb-validations="required" />
-                                <label for="phone">Phone number</label>
-                                <div class="invalid-feedback" data-sb-feedback="phone:required">A phone number is required.</div>
-                            </div>
-                            <!-- Message input-->
-                            <div class="form-floating mb-3">
-                                <textarea class="form-control" id="message" type="text" placeholder="Enter your message here..." style="height: 10rem" data-sb-validations="required"></textarea>
-                                <label for="message">Message</label>
-                                <div class="invalid-feedback" data-sb-feedback="message:required">A message is required.</div>
-                            </div>
-                            <!-- Submit success message-->
-                            <!---->
-                            <!-- This is what your users will see when the form-->
-                            <!-- has successfully submitted-->
-                            <div class="d-none" id="submitSuccessMessage">
-                                <div class="text-center mb-3">
-                                    <div class="fw-bolder">Form submission successful!</div>
-                                    To activate this form, sign up at
-                                    <br />
-                                    <a href="https://startbootstrap.com/solution/contact-forms">https://startbootstrap.com/solution/contact-forms</a>
-                                </div>
-                            </div>
-                            <!-- Submit error message-->
-                            <!---->
-                            <!-- This is what your users will see when there is-->
-                            <!-- an error submitting the form-->
-                            <div class="d-none" id="submitErrorMessage"><div class="text-center text-danger mb-3">Error sending message!</div></div>
-                            <!-- Submit Button-->
-                            <div class="d-grid"><button class="btn btn-primary btn-lg disabled" id="submitButton" type="submit">Submit</button></div>
-                        </form>
-                    </div>
+<section class="bg-light py-5" id="contact">
+    <div class="container px-5 my-5 px-5">
+        <div class="text-center mb-5">
+            <div class="feature bg-danger bg-gradient text-white rounded-3 mb-3"><i class="bi bi-envelope"></i></div>
+            <h2 class="fw-bolder">Contact Information</h2>
+        </div>
+        <div class="row gx-5 justify-content-center">
+            <div class="col-lg-6">
+                <!-- Static contact information -->
+                <div class="text-center">
+                    <p><strong>Email:</strong>s10421@kcis.com.tw</p>
+                    <p><strong>Phone:</strong>+886 900-104-211</p>
                 </div>
             </div>
-        </section>
+        </div>
+    </div>
+</section>
+
         <!-- Footer-->
         <footer class="py-5 bg-dark">
             <div class="container px-5"><p class="m-0 text-center text-white">Copyright &copy; Your Website 2023</p></div>
